@@ -28,10 +28,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     // this.setLanguage();
     this.getNewReleases();
-    this.auth.getToken().subscribe((res: any) => {
-      console.log(res);
-      
-    })
   }
 
   // call service to get new releases from spotify
