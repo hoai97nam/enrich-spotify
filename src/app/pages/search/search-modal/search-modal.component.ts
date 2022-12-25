@@ -9,9 +9,9 @@ export class SearchModalComponent implements OnInit {
   @Input() public showModal: boolean = false;
   @Output() private showModalChange: EventEmitter<boolean> = new EventEmitter<boolean>();
   
-  constructor() { /*empty*/ }
+  constructor() {  }
 
-  ngOnInit(): void { /*empty*/ }
+  ngOnInit(): void {  }
 
   public getShowErrorChange(): any {
     return this.showModalChange;

@@ -9,9 +9,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SearchTrackItemComponent implements OnInit {
   @Input() track: any;
 
-  constructor(private router: Router) { /*empty*/ }
+  constructor(private router: Router) {  }
 
-  ngOnInit(): void { /*empty*/ }
+  ngOnInit(): void {  }
 
   // navigates to album
   public navigate(track: any): void {

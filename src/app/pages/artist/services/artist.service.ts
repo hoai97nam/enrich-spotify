@@ -13,7 +13,7 @@ import { APIArtistAlbums, AlbumItem } from '../models/artist-albums';
 @Injectable() // service provided in Artist module
 export class ArtistService {
 
-  constructor(private globalService: GlobalService) { /*empty*/ }
+  constructor(private globalService: GlobalService) {  }
 
   // get artist info
   public getArtist(artistId: string): Observable<APIArtist> {

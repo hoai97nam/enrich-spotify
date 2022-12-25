@@ -2,9 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
-// Services
 import { ArtistService } from '../services/artist.service';
-import { GlobalService } from 'src/app/services/global.service';
 
 @Component({
   selector: 'app-artist',
@@ -19,7 +17,7 @@ export class ArtistComponent implements OnInit {
   public moreAlbums: boolean = false;
   public moreTracks: boolean = false;
 
-  constructor( private activatedRoute: ActivatedRoute, private artistService: ArtistService ) { /*empty*/ }
+  constructor( private activatedRoute: ActivatedRoute, private artistService: ArtistService ) {  }
 
   ngOnInit(): void {
     this.getActivatedRoute();

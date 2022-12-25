@@ -9,9 +9,9 @@ export class ArtistTopTrackComponent implements OnInit {
   @Input() topTrack: any;
   public play: boolean = false;
 
-  constructor() { /*empty*/ }
+  constructor() {  }
 
-  ngOnInit(): void { /*empty*/ }
+  ngOnInit(): void {  }
 
   // updates variable that controls player visibility
   public player(): void {

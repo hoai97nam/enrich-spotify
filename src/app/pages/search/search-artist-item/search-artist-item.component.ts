@@ -9,9 +9,9 @@ import { Router } from '@angular/router';
 export class SearchArtistItemComponent implements OnInit {
   @Input() artist: any;
 
-  constructor(private router: Router) { /*empty*/ }
+  constructor(private router: Router) {  }
 
-  ngOnInit(): void { /*empty*/ }
+  ngOnInit(): void {  }
 
   // navigates to artist
   public navigate(artist: any): void {

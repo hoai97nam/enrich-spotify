@@ -4,8 +4,6 @@ import { Location } from '@angular/common';
 
 // Services
 import { AlbumService } from '../services/album.service';
-
-// Models
 import { APIAlbums } from '../models/album-model';
 
 @Component({
@@ -21,7 +19,7 @@ export class AlbumComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private albumService: AlbumService,
     private location: Location,
-    ) { /*empty*/ }
+    ) { }
 
   ngOnInit(): void {
     this.getActivatedRoute();

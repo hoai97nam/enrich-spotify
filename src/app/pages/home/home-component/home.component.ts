@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
-// Models
 import { NewReleasesItem } from '../models/new-releases-model';
-
-// Services
 import { NewReleasesService } from '../services/new-releases.service';
 import { GlobalService } from 'src/app/services/global.service';
 import { ClientCredentialsService } from 'src/app/services/client-credentials.service';
@@ -23,7 +20,7 @@ export class HomeComponent implements OnInit {
     private globalService: GlobalService,
     private translate: TranslateService,
     private auth: ClientCredentialsService
-    ){ /*empty*/ }
+    ){  }
 
   ngOnInit(): void {
     // this.setLanguage();
@@ -47,9 +44,4 @@ export class HomeComponent implements OnInit {
     document.getElementById(elementId)?.scrollIntoView();
   }
 
-  // set language
-  // public setLanguage(): void {
-  //   this.activeLanguage = this.globalService.getGlobalLanguage();
-  //   this.translate.use(this.activeLanguage);
-  // }
 }

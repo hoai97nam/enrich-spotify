@@ -1,9 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-// Services
 import { SearchService } from '../services/search.service';
 import { Router } from '@angular/router';
-import { GlobalService } from 'src/app/services/global.service';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -20,9 +18,9 @@ export class SearchComponent implements OnInit {
   public moreTracks: boolean = false;
   public activeLanguage: string = 'en';
 
-  constructor( private searchService: SearchService, private router: Router ) { /*empty*/ }
+  constructor( private searchService: SearchService, private router: Router ) {  }
 
-  ngOnInit(): void { /*empty*/ }
+  ngOnInit(): void {  }
 
   // search both artist and track
   public search(term: string): void {

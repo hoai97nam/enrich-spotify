@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
-// Models
 import { NewReleasesItem } from '../models/new-releases-model';
 
 @Component({
@@ -12,9 +11,9 @@ import { NewReleasesItem } from '../models/new-releases-model';
 export class NewReleaseItemComponent implements OnInit {
   @Input() newRelease: NewReleasesItem | undefined;
 
-  constructor(private router: Router) { /*empty*/ }
+  constructor(private router: Router) {  }
 
-  ngOnInit(): void { /*empty*/ }
+  ngOnInit(): void {  }
 
   public navigate(newRelease: any): void {
     let newReleaseId: number = 0;

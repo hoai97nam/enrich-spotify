@@ -1,7 +1,6 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { GlobalService } from 'src/app/services/global.service';
 import { ClientCredentialsService } from 'src/app/services/client-credentials.service';
 import { filter, map, tap } from 'rxjs/operators';
 
@@ -25,7 +24,7 @@ export class NavBarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (localStorage.getItem('token')) {
+    if (!localStorage.getItem('token')) {
       this.getToken();
     }
   }
@@ -44,7 +43,6 @@ export class NavBarComponent implements OnInit {
         state: params.get('state')
       })),
       tap((params: any) => {
-        console.log('[Angular Spotify] Authenticated!', params);
         this.router.navigate(['home']);
       })
     ).subscribe(res => {
@@ -52,7 +50,7 @@ export class NavBarComponent implements OnInit {
     })
   }
 
-
+  
   // update variable which controls side bar visibility
   public openOrCloseNav(): void {
     this.openSideBar = !this.openSideBar;

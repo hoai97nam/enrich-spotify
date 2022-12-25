@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ArtistComponent } from './artist-component/artist.component';
 
 const routes: Routes = [
-  { // route => /artist/id
+  { 
     path: '',
     component: ArtistComponent,
   }

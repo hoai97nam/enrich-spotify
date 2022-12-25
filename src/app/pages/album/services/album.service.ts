@@ -4,14 +4,12 @@ import { map, catchError } from 'rxjs/operators';
 
 // Models
 import { APIAlbums } from '../models/album-model';
-
-// Services
 import { GlobalService } from 'src/app/services/global.service';
 
-@Injectable() // service provided in Artist module
+@Injectable()
 export class AlbumService {
 
-  constructor(private globalService: GlobalService) { /*empty*/ }
+  constructor(private globalService: GlobalService) {  }
 
   // get album info
   public getAlbum(albumId: string): Observable<APIAlbums> {
